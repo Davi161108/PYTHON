@@ -1,0 +1,13 @@
+entrada=input("Digite seu nome: ")
+print (" Oii "+entrada+", boa tarde")
+
+a="Banana"
+b="Canela é muito bom! Já experimentou?"
+c=" com " 
+print (a+c+b)
+
+entrada=input("Digite seu nome: ")
+gabi=input("Digite sua idade: ")
+davi=input("Digite sua cidade: ")
+
+print("Olá "+entrada+", você tem "+gabi+" anos, e mora em "+davi)
