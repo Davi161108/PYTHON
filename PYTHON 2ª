@@ -12,4 +12,4 @@ aluno = {
     'escola' : escola
 }
 
-print(f"Seu nome é {nome}, a sua idade é {idade}, seu cpf é {cpf}, você estuda no(a){escola}")
+print(f"Seu nome é: {nome}, \nA sua idade é: {idade}, \nSeu cpf é: {cpf}, \nVocê estuda no(a): {escola}")
