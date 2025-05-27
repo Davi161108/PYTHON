@@ -1,0 +1,15 @@
+nome=input("Digite seu nome: ")
+idade=input("Digite sua idade: ")
+cpf=input("Digite seu cpf: ")
+escola=input("Digite sua escola: ")
+
+print("\nMATRICULA REGISTRADA")
+
+aluno = {
+    'nome': nome,
+    'idade': idade,
+    'cpf' : cpf,
+    'escola' : escola
+}
+
+print(f"Seu nome é {nome}, a sua idade é {idade}, seu cpf é {cpf}, você estuda no(a){escola}")
