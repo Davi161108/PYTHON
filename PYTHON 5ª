@@ -1,0 +1,6 @@
+a= int(input("Digite um número: "))
+b= int(input("Digite outro número: "))
+
+if a % b==0:
+    print("Esses números são múltiplos entre si")
+else: print("Esses números não são múltiplos entre si")
