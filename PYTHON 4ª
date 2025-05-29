@@ -1,0 +1,21 @@
+salario= float(input("Digite o seu salário: "))
+
+if salario<=1.518:
+    resultado = salario * 0.075
+    salarioliquido = salario-resultado
+    print(f"salário líquido: R$ {salarioliquido:.2f}")
+
+elif salario>=1518.1 and salario<=2793.88:
+    resultado = salario * 0.09
+    salarioliquido = salario-resultado
+    print(f"salário líquido: R$ {salarioliquido:.2f}")
+
+elif salario>=2793.89 and salario<=4190.83:
+    resultado = salario * 0.12
+    salarioliquido = salario-resultado
+    print(f"salário líquido: R$ {salarioliquido:.2f}")
+
+elif salario>=4190.84 and salario<=8157.41:
+    resultado = salario * 0.14
+    salarioliquido = salario-resultado
+    print(f"salário líquido: R$ {salarioliquido:.2f}")
