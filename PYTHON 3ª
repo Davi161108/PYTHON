@@ -1,0 +1,21 @@
+davi= int(input("Digite sua idade: "))
+
+if davi <18:
+    print ('Voce e menor de idade, ainda dependente dos seus pais...')
+
+elif davi >=18 and davi <60 :
+    print ('Voce é adulto, CLT')
+else: print ('É idoso, está acabado já...')
+
+print('OUTRA ATIVIDADE')
+
+nota = int(input("Qual a sua nota? Apresentaremos o seu estado de aprovaçao: "))
+
+if nota <4:
+    print('Você está reprovado!')
+elif nota>=4 and nota<6:
+    print('Você está de recuperação!')
+elif nota>=6 and nota <=10:
+    print('VOCÊ ESTÁ APROVADOOOOO(A)! UWULLLL')
+elif nota >10:
+    print('Essa nota não existe!')
