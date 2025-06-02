@@ -1,0 +1,7 @@
+psg = input("escolha uma opçao e digite-a: 'winner' ou 'campeao' (: ")
+
+while psg == 'winner':
+    print ('5 a 0')
+
+while psg == 'campeao':
+    print('Goleada!')
