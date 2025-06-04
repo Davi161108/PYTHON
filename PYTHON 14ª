@@ -1,0 +1,16 @@
+while True:
+    nome=input("Digite seu nome: ").strip()
+    if nome.isalpha():
+        print(f"Ola {nome}")
+        break
+    else:
+        print("Somente letras, por favor!")
+        
+while True:
+        idade=input("Digite sua idade: ")
+        
+        if idade.isdigit():
+            print(f"Nós salvamos seus dados! Você se chama {nome}, e tem {idade} anos!")
+            break
+        else:
+            print("Somente números por favor!")
