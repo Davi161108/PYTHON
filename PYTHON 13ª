@@ -1,0 +1,34 @@
+'''
+while True:
+    numero= input("Digite seu número de telefone: ")
+    if len(numero) not in [8,12]:
+        print("Número ínvalido")
+    else:
+        print("Número valido")
+        break
+'''
+while True:
+    user= input("Digite seu username: ")
+    senha=input("Digite sua senha: ")
+    if len(senha) not in [8]:
+        print("Senha deve conter apenas 8 caracteres. Tente novamente")
+        continue
+
+    temletra=False
+    temnumero=False
+
+    for caractere in senha:
+        if caractere.isalpha():
+            temletra=True
+        if caractere.isdigit():
+            temnumero=True 
+
+    if not temletra:
+        print("A senha deve conter pelo menos uma letra.")
+        continue
+    if not temnumero:
+         print("A senha deve conter pelo menos um número.")
+         continue
+    
+    print("Úsuname e senha válidos.")
+    break
