@@ -1,0 +1,15 @@
+while True:
+    entrada=input("DIGITE UM NUMERO INTEIRO: ")
+
+    if entrada.isdigit():
+        entrada=int(entrada)
+        fatorial=1
+
+        while entrada>0:
+            fatorial*=entrada
+            entrada-=1
+            
+        print(f"o fatorial é: {fatorial}")
+        break
+    else:
+        print("EU PEDI FOI NUMERO!")
