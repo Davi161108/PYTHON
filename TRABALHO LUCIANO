@@ -1,0 +1,307 @@
+print("Questão 1- Peça ao usuário um número e informe se ele é positivo ou negativo.")
+
+numero=float(input("Digite um número: "))
+
+if numero>0:
+    print("O número é positivo. ")
+elif numero < 0:
+    print("O número é negativo.")
+else:
+    print("O número é zero.")
+
+
+
+print("Questão 2- Peça um número e informe se ele é par ou ímpar.")
+
+numero=int(input("Digite seu número: "))
+
+if numero%2==0:
+    print("O número é par.")
+else:
+    print("O número é ímpar.")
+
+
+
+print("Questão 3-  Peça ao usuário seu nome e diga: Olá nome")
+
+a=input("Digite seu nome")
+print(f'Olá, {a}')
+
+
+
+print("Questão 4- Peça dois números e informe se o primeiro é maior, menor ou igual ao segundo.")
+
+a=int(input("Digite um número, este sera o valor de 'a':"))
+b=int(input("Digite outro número, este sera o valor de 'b':"))
+
+if a>b:
+    print("'a' é maior que 'b'")
+elif a<b:
+    print("'a' é menor que 'b'")
+else:
+    print("O valor de 'a' é igual ao de 'b'")
+
+
+
+print("Questão 5-Peça ao usuário dois números e informe se eles são múltiplos entre si. ")
+
+a= int(input("Digite um número: "))
+b= int(input("Digite outro número: "))
+
+if a % b==0:
+    print("Esses números são múltiplos entre si")
+else: print("Esses números não são múltiplos entre si")
+
+
+
+print("Questão 6- Peça uma palavra e informe se ela contém apenas letras.")
+
+palavra=input("Digite sua palavra: ")
+
+if palavra.isaplha():
+    print("A palavra contém apenas letras.")
+else:
+    print("A palavra não contém apenas letras.")
+
+
+
+print("Questão 7- Peça ao usuário uma frase e conte quantos caracteres ela possui.")
+
+frase=input("Digite uma frase: ")
+quantidade= len(frase)
+
+print(f"A frase possui {quantidade} caracteres.")
+
+
+
+print("Questão 8- Peça um número inteiro e informe se ele está no intervalo de 1 a 100.")
+
+while True:
+
+    entrada=input("Digite um número inteiro: ")
+
+    if entrada.isdigit():
+        numero=int(entrada)
+        if 0<=numero<=100:
+            print("Este número está entre 0 e 100")
+            break
+        else:
+            print("Este número não está entre 0 e 100")
+    else:
+        print("Entrada inválida. Digite apenas números inteiros.")
+
+
+
+print("Questão 9- Peça um nome e uma idade: Nome deve conter apenas letras; Idade deve ser número positivo.")
+
+while True:
+    nome = input("Digite seu nome: ")
+
+    if nome.isalpha():
+        break
+    else:
+        print("Nome inválido. Digite apenas letras.")
+
+while True:
+    idade = input("Digite sua idade: ")
+
+    if idade.isdigit():
+        idade = int(idade)
+        if idade > 0:
+            break
+        else:
+            print("Idade deve ser um número positivo.")
+    else:
+        print("Idade inválida. Digite apenas números positivos.")
+
+print(f"\nNome: {nome}")
+print(f"Idade: {idade}")
+
+
+
+print("Questão 10- Peça uma senha e valide: Mínimo 6 caracteres; Pelo menos 1 letra e 1 número.")
+
+while True:
+    senha=input("Digite sua senha: ")
+    if len(senha) not in [6]:
+        print("Senha deve conter apenas 6 caracteres. Tente novamente")
+        continue
+
+    temletra=False
+    temnumero=False
+
+    for caractere in senha:
+        if caractere.isalpha():
+            temletra=True
+        if caractere.isdigit():
+            temnumero=True 
+
+    if not temletra:
+        print("A senha deve conter pelo menos uma letra.")
+        continue
+    if not temnumero:
+         print("A senha deve conter pelo menos um número.")
+         continue
+    
+    print("Senha válido.")
+    break
+
+
+
+print("Questão 11- Peça um telefone: Deve conter apenas números; Entre 8 e 12 dígitos.")
+
+while True:
+    numero= input("Digite seu número de telefone: ")
+    if len(numero) not in [8,12]:
+        print("Número ínvalido")
+    else:
+        print("Número valido")
+        break
+
+
+
+print("Questão 12-Peça ao usuário para informar a sigla de um estado brasileiro e valide: Se for 'SP', 'RJ', ou 'MG' → exiba: 'Sudeste'; Se for 'RS', 'SC', ou 'PR' → exiba: 'Sul'; Caso contrário → exiba: 'outra região'.")
+
+while True:
+    estado= input("Digite a Sigla de algum estado brasileiro: ").strip().upper()
+    if estado in ["SP", "RJ", "MG"]:
+        print("Sudeste")
+        break
+    elif estado in ["RS", "SC", "PR"]:
+        print("Sul")
+        break
+    else:
+        print("Outra região")
+        break
+        
+        
+
+print("Questão 13- Peça dois números: Se ambos forem positivos → exiba a soma; Se não → exiba: 'Números inválidos'.")
+
+num1=int(input("Digite um número: "))
+num2=int(input("Digite outro número: "))
+
+if num1>0 and num2>0:
+    resultado=num1+num2
+    print(f"Esta é a soma de {num1}+{num2}={resultado}" )
+else:
+    print("Números inválidos.")
+
+
+
+print ("Questão 14-Peça um número e informe se ele é divisível por 3 ou 5.")
+
+numero = int(input("Digite um número: "))
+
+if numero % 3 == 0 and numero % 5 == 0:
+    print(f"O número {numero} é divisível por 3 e 5.")
+elif numero % 3 == 0:
+    print(f"O número {numero} é divisível por 3.")
+elif numero % 5 == 0:
+    print(f"O número {numero} é divisível por 5.")
+else:
+    print(f"O número {numero} não é divisível nem por 3 nem por 5.")
+
+
+
+
+print ("Questão 15- Peça um texto e informe: Se ele começa com a letra 'A' ou 'a'.")
+
+texto = input("Digite um texto: ")
+
+if texto:
+    if texto[0] == 'a':
+        print("O texto começa com a letra 'a' minúsculo.")
+    elif texto[0] == 'A':
+        print("O texto começa com a letra 'A' maiúsculo.")
+    else:
+        print("O texto não começa com a letra 'A' ou 'a'.")
+else:
+    print("O texto está vazio.")
+
+
+
+print("Questão 16- Peça ao usuário uma lista de 3 números e exiba o maior e o menor deles.")
+
+a=int(input("Digite um número: "))
+b=int(input("Digite outro número: "))
+c=int(input("Digite mais um número: "))
+
+if a>=b and a>=c:
+    maior=a
+elif b>=a and b>=c:
+    maior=b
+elif c>=a and c>=b:
+    maior=c
+elif a<=b and a<=c:
+    menor=a
+elif b<=a and b<=c:
+   menor=b
+elif c<=a and c<=b:
+    menor=c
+
+print(f"O maior número é: {maior}")
+print(f"O menor número é: {menor}")  
+
+
+
+print("Questão 17- Crie um dicionário para armazenar nome, idade e cidade de uma pessoa. Peça os dados e depois exiba o dicionário completo.")
+
+nome=input("Digite seu nome: ")
+idade=input("Digite sua idade: ")
+cidade=input("Digite a cidade em que você mora: ")
+
+print("\nMATRICULA REGISTRADA")
+
+aluno = {
+    'nome': nome,
+    'idade': idade,
+    'cidade' : cidade,
+}
+
+print(f"Seu nome é: {nome}, \nA sua idade é: {idade}, \nVocê mora na cidade: {cidade}.")
+
+
+
+print("Questão 18- Peça uma senha e continue pedindo até que ela seja válida, mínimo 6 caracteres, com letra e número.")
+
+while True:
+    senha=input("Digite sua senha: ")
+    if len(senha) not in [6]:
+        print("Senha deve conter apenas 6 caracteres. Tente novamente")
+        continue
+
+    temletra=False
+    temnumero=False
+
+    for caractere in senha:
+        if caractere.isalpha():
+            temletra=True
+        if caractere.isdigit():
+            temnumero=True 
+
+    if not temletra:
+        print("A senha deve conter pelo menos uma letra.")
+        continue
+    if not temnumero:
+         print("A senha deve conter pelo menos um número.")
+         continue
+    
+    print("Senha válido.")
+    break
+
+
+
+print("Questão 19- Peça ao usuário um número e informe se ele é primo.")
+
+numero = int(input("Digite um número: "))
+
+if numero < 2:
+    print(f"{numero} não é primo.")
+else:
+    for i in range(2, numero):
+        if numero % i == 0:
+            print(f"{numero} não é primo.")
+            break
+    else:
+        print(f"{numero} é primo.")
