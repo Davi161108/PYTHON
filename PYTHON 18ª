@@ -1,0 +1,9 @@
+conectores=['e','do','da','dos','das','de','di','du']
+
+nome=input("Digite um nome: ")
+arr = nome.split()
+
+iniciais = [palavra[0] for palavra in arr if palavra not in conectores]
+sigla = ''.join(iniciais).upper()
+
+print(sigla)
