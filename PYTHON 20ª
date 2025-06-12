@@ -1,0 +1,9 @@
+while True:
+    palavra = input("Digite sua palavra: ")
+    
+    palavras = len(palavra)
+    print(palavras)
+
+    if palavra == '':
+        print('Entrada vazia.')
+        break
