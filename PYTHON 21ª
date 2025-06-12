@@ -1,0 +1,10 @@
+num=int(input("Digite um número: "))
+
+if num % 7 == 0:
+    print("Esse numero e multiplo de 7")
+if num > 10:
+     print("Esse numero e maior que 10")
+if num % 7 != 0:
+    print("Esse numero nao e multiplo de 7")
+if num < 10:
+     print("Esse numero e menor que 10")
