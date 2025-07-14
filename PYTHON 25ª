@@ -1,0 +1,7 @@
+def lista(nome):
+    print("Olá,", nome)
+
+lista("Davi")
+lista("Gabi")
+lista("Saulo")
+lista("Zinha")
