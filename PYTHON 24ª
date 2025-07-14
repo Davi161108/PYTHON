@@ -1,0 +1,26 @@
+nomes=[]
+medias=[]
+situacoes=[]
+
+while True:
+    aluno=input("Digite um nome: ")
+    nota1=int(input("Digite uma nota: "))
+    nota2=int(input("Digite outra nota: "))
+    nota3=int(input("Digite mais uma nota: "))
+
+    media= (nota1+nota3+nota2)/3
+   
+    if media>=7:
+        situacao= "Aprovado"
+    else:
+        situacao="Recuperação"
+
+    nomes.append(aluno)
+    medias.append(round(media, 2))
+    situacoes.append(situacao)
+
+    print(f"{situacao}\n")
+
+    print("\n=== RESUMO FINAL ===")
+    for i in range(len(nomes)):
+        print(f"Nome: {nomes[i]} | Média: {medias[i]} | Situação: {situacoes[i]}")
